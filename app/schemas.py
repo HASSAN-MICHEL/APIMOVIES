@@ -1,6 +1,7 @@
 from pydantic import BaseModel 
 from typing import Optional, List 
-# --- Schémas secondaires --- 
+
+
 class RatingBase(BaseModel): 
     userId: int 
     movieId: int 
