@@ -1,9 +1,18 @@
+# from sqlalchemy.orm import Session, joinedload
+# from sqlalchemy import and_, or_
+# from app import models, schemas
+# from typing import List, Optional, Dict, Any
+
+
+
 from sqlalchemy.orm import Session, joinedload
 from sqlalchemy import and_, or_
-from app import models, schemas
 from typing import List, Optional, Dict, Any
 
-
+# Correction des imports
+# import models
+# import schemas 
+from . import models, schemas
 
 #je vais commencé par les movies :
 

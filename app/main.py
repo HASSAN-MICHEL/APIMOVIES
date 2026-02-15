@@ -229,8 +229,10 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 
 # Imports CORRIGÉS - ajout de models
-from app.database import engine, Base, get_db
-from app import schemas, crud, models  # ← IMPORTANT: ajout de models
+# from app.database import engine, Base, get_db
+# from app import schemas, crud, models  
+from .database import engine, Base, get_db
+from . import schemas, crud, models
 
 # Création des tables
 Base.metadata.create_all(bind=engine)
